@@ -43,7 +43,6 @@
   display: inline-block;
   text-decoration: none;
   color: var(--white-color);
-  font-family: var(--font-dm-sans);
   line-height: 1.75;
   font-size: 16px;
   transition: color 200ms ease-in;
@@ -58,8 +57,8 @@
   margin: 32px 0 0 0;
   text-align: center;
   color: var(--white-color);
-  font-family: var(--font-dm-sans);
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 1.5;
   font-weight: 400;
 
   @media screen and (min-width: 1440px) {
