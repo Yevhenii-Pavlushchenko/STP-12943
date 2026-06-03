@@ -30,8 +30,8 @@ body {
   min-height: 100vh;
   margin: 0;
   padding-top: 60px;
-  background-color: var(--black-color);
-  color: var(--white-color);
+  /* background-color: var(--black-color);
+  color: var(--white-color); */
 }
 
 @media only screen and (min-width: 1440px) {
@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-oswald);
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 
 p,
