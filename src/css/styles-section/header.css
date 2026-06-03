@@ -1,11 +1,9 @@
 .header {
-  /* background-color: var(--black-color); */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* width: calc(100% + 16px); */
-  /* max-width: 375px; */
+  background-color: var(--background-color);
   margin: 0 auto;
   z-index: 1000; /**/
 }
@@ -26,9 +24,9 @@
   border: none;
 }
 .btn-burger-icon {
-  /* fill: var(--white-color); */
-  width: 24px;
-  height: 24px;
+  fill: var(--black-color);
+  width: 40px;
+  height: 40px;
 }
 .navigation {
   display: none;
@@ -64,21 +62,20 @@
   .item-nav-link {
     display: block;
     padding: 33.5px 0;
-    font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 17px;
     line-height: 1.05882;
     text-align: center;
-    /* color: var(--white-color); */
-    transition: color 300ms ease-in-out;
+    color: var(--black-color);
+    transition: color 200ms ease-in-out;
     &:hover {
-      /* color: var(--active-color); */
+      color: var(--accent-color);
     }
     &:focus {
-      /* color: var(--active-color); */
+      color: var(--accent-color);
     }
     &:active {
-      /* color: var(--active-color); */
+      color: var(--accent-color);
     }
   }
 }
