@@ -1,0 +1,111 @@
+.about > .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    }
+}
+
+.descr-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  @media (min-width: 1440px) {
+      width: 552px;
+    }
+}
+
+.section-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--font-old-standard);
+  font-weight: 400;
+    font-size: 30px;
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+
+    @media (min-width: 1440px) {
+      font-size: 48px;
+    }
+}
+
+.section-subtitle-span {
+    font-family: var(--font-old-standard);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.33333;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--accent-color);
+
+    @media (min-width: 1440px) {
+        font-size: 48px;
+        text-align: start;
+      }
+}
+
+.about-descr {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.picture-wrapper {
+  position: relative;
+  width: 335px;
+  height: 250px;
+}
+
+.picture-wrapper-item {
+  position: absolute;
+  border-radius: 16px;
+  box-shadow: 0 4px 19px 0 rgba(162, 98, 115, 0.4);
+  width: 125px;
+  height: 154px;
+}
+.picture-wrapper-item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.picture-wrapper-item:nth-child(2) {
+  top: 44px;
+  left: 102px;
+}
+.picture-wrapper-item:nth-child(3) {
+  right: 0px;
+  bottom: 0px;
+}
+
+.picture-wrapper-item picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.picture-wrapper-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
