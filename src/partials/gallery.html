@@ -1,0 +1,148 @@
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">Section Gallery</h2>
+    <div class="gallery-title-image">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/gallery/title-gallery-desktop.png    1x,
+            /img/gallery/title-gallery-desktop@2x.png 2x
+          "
+        />
+        <source
+          srcset="
+            /img/gallery/title-gallery-mob.png    1x,
+            /img/gallery/title-gallery-mob@2x.png 2x
+          "
+        />
+        <img src="/img/gallery/title-gallery-mob.png" alt="Gallery" />
+      </picture>
+    </div>
+    <div class="gallery-swiper-outer">
+      <div id="gallery-swiper" class="swiper gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery-swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  /img/gallery/desktop/sw-gallery-desktop-01.png    1x,
+                  /img/gallery/desktop/sw-gallery-desktop-01@2x.png 2x
+                "
+              />
+              <source
+                srcset="
+                  /img/gallery/mobile/sw-gallery-mob-01.png    1x,
+                  /img/gallery/mobile/sw-gallery-mob-01@2x.png 2x
+                "
+              />
+              <img
+                src="/img/gallery/mobile/sw-gallery-mob-01.png"
+                alt="Gallery Battle 1"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide gallery-swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  /img/gallery/desktop/sw-gallery-desktop-02.png    1x,
+                  /img/gallery/desktop/sw-gallery-desktop-02@2x.png 2x
+                "
+              />
+              <source
+                srcset="
+                  /img/gallery/mobile/sw-gallery-mob-02.png    1x,
+                  /img/gallery/mobile/sw-gallery-mob-02@2x.png 2x
+                "
+              />
+              <img
+                src="/img/gallery/mobile/sw-gallery-mob-02.png"
+                alt="Gallery Battle 2"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide gallery-swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  /img/gallery/desktop/sw-gallery-desktop-03.png    1x,
+                  /img/gallery/desktop/sw-gallery-desktop-03@2x.png 2x
+                "
+              />
+              <source
+                srcset="
+                  /img/gallery/mobile/sw-gallery-mob-03.png    1x,
+                  /img/gallery/mobile/sw-gallery-mob-03@2x.png 2x
+                "
+              />
+              <img
+                src="/img/gallery/mobile/sw-gallery-mob-03.png"
+                alt="Gallery Battle 3"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide gallery-swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  /img/gallery/desktop/sw-gallery-desktop-04.png    1x,
+                  /img/gallery/desktop/sw-gallery-desktop-04@2x.png 2x
+                "
+              />
+              <source
+                srcset="
+                  /img/gallery/mobile/sw-gallery-mob-04.png    1x,
+                  /img/gallery/mobile/sw-gallery-mob-04@2x.png 2x
+                "
+              />
+              <img
+                src="/img/gallery/mobile/sw-gallery-mob-04.png"
+                alt="Gallery Battle 4"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide gallery-swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  /img/gallery/desktop/sw-gallery-desktop-05.png    1x,
+                  /img/gallery/desktop/sw-gallery-desktop-05@2x.png 2x
+                "
+              />
+              <source
+                srcset="
+                  /img/gallery/mobile/sw-gallery-mob-05.png    1x,
+                  /img/gallery/mobile/sw-gallery-mob-05@2x.png 2x
+                "
+              />
+              <img
+                src="/img/gallery/mobile/sw-gallery-mob-05.png"
+                alt="Gallery Battle 5"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-controls">
+        <button type="button" class="gallery-prev" data-gallery-prev>
+          <svg width="24" height="24">
+            <use href="/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <div data-gallery-pagination class="gallery-pagination"></div>
+        <button type="button" class="gallery-next" data-gallery-next>
+          <svg width="24" height="24">
+            <use href="/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

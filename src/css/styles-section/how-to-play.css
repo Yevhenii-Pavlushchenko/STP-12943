@@ -1,0 +1,185 @@
+.how-to-play {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 375px;
+  height: 918px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 0px;
+  background-image: url('/img/how-to-play/bg-how-to-play-mob.png');
+  scroll-margin-top: 60px;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .how-to-play {
+      background-image: url('/img/how-to-play/bg-how-to-play-mob@2x.png');
+    }
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .how-to-play {
+    background-image: url('/img/how-to-play/bg-how-to-play-mob@2x.png');
+  }
+}
+@media (min-width: 1440px) {
+  .how-to-play {
+    width: 100%;
+    max-width: 1440px;
+    scroll-margin-top: 90px;
+    background-image: url('/img/how-to-play/bg-how-to-play-desktop.png');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .how-to-play {
+      background-image: url('/img/how-to-play/bg-how-to-play-desktop@2x.png');
+    }
+  }
+}
+
+.how-to-play .container {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  padding: 0;
+}
+
+.how-to-play-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 273px;
+  @media (min-width: 1440px) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-top: 286px;
+  }
+}
+
+/* --- Контейнер слайдера --- */
+.how-to-play-swiper {
+  position: relative;
+  width: 295px;
+  height: 517px;
+  margin-right: 0px !important;
+  overflow: hidden;
+  display: block;
+  z-index: 99;
+  @media (min-width: 1440px) {
+    width: 413px;
+    height: 616px;
+  }
+}
+
+.swiper-slide {
+  width: 250px !important;
+  height: 167px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+  @media (min-width: 1440px) {
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.how-to-play-swiper .swiper-slide-active img {
+  border-color: var(--active-color);
+}
+
+/* --- Пагинация (точки) --- */
+.how-to-play-swiper .swiper-pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  transform: translateY(-50%);
+  right: 22px !important;
+  top: 50% !important;
+  @media (min-width: 1440px) {
+    right: 57px !important;
+  }
+}
+
+.how-to-play-swiper .swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: var(--white-color) !important;
+  border-radius: 4px;
+  opacity: 1 !important;
+  margin: 0 !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.how-to-play-swiper .swiper-pagination-bullet-active {
+  background-color: var(--white-color) !important;
+}
+
+.how-to-play-swiper .swiper-pagination-bullet-active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--yellow-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* --- Описание  к слайду --- */
+
+.how-to-play-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 352px;
+  padding-left: 36px;
+  @media (min-width: 1440px) {
+    width: 862px;
+    padding-bottom: 60px;
+    padding-left: 108px;
+  }
+}
+
+.info-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  @media (min-width: 1440px) {
+    margin-bottom: 10px;
+  }
+}
+
+.info-text {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 342px;
+  line-height: 1.125;
+  color: var(--text-color);
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 1.3;
+    max-width: 832px;
+  }
+}

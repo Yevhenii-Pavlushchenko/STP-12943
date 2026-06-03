@@ -1,0 +1,29 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+
+/* Sections style */
+@import url('./styles-section/header.css');
+@import url('./styles-section/secondary-header.css');
+@import url('./styles-section/hero.css');
+@import url('./styles-section/about.css');
+@import url('./styles-section/how-to-play.css');
+@import url('./styles-section/features.css');
+@import url('./styles-section/download.css');
+@import url('./styles-section/gallery.css');
+@import url('./styles-section/reviews.css');
+@import url('./styles-section/faq.css');
+@import url('./styles-section/contact.css');
+@import url('./styles-section/footer.css');
+@import url('./styles-section/mobile-menu.css');
+
+/* Secondary Page style */
+@import url('./privacy-policy.css');
+@import url('./terms-conditions.css');

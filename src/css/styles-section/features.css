@@ -1,0 +1,133 @@
+.features {
+  padding: 70px 0;
+
+  @media (min-width: 1440px) {
+    padding: 90px 0;
+  }
+}
+
+.features-title-image {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 28px;
+  margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    padding-left: 175px;
+    margin-bottom: 40px;
+  }
+}
+
+.features-title-image img {
+  display: block;
+  width: 250px;
+  height: auto;
+
+  @media (min-width: 1440px) {
+    width: 500px;
+  }
+}
+
+/* Свайпер */
+.features-swiper-outer {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+
+  @media (min-width: 1440px) {
+    width: 978px;
+    padding-bottom: 60px;
+  }
+}
+
+.features-swiper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+
+  @media (min-width: 1440px) {
+    height: 400px;
+  }
+}
+
+.features-swiper-slide {
+  width: 100% !important;
+  height: 252px !important;
+
+  @media (min-width: 1440px) {
+      height: 348px!important;
+    }
+}
+
+.features-swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Пагинация */
+.features-pagination.swiper-pagination {
+  position: absolute !important;
+  bottom: 5px !important;
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  z-index: 10;
+}
+
+.features-pagination .swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: var(--white-color) !important;
+  opacity: 1 !important;
+  margin: 0 10px !important;
+  position: relative;
+}
+
+.features-pagination .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.features-swiper .features-swiper-slide {
+  position: relative;
+}
+
+/* Обгортка для тексту */
+.features-swiper .slide-overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
+  z-index: 5;
+  pointer-events: none;
+
+  @media (min-width: 1440px) {
+    bottom: 34px;
+    left: 30px;
+  }
+}
+
+/* Стилі самого тексту */
+.features-swiper .slide-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.1;
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+}

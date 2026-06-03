@@ -1,0 +1,42 @@
+.secondary-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--black-color);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+.back-link {
+  display: block;
+  font-family: var(--font-oswald);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  padding: 15px 0;
+  text-align: center;
+  color: var(--white-color);
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: var(--active-color);
+  }
+  &:active {
+    color: aqua;
+  }
+}
+
+@media (min-width: 1440px) {
+  .back-link {
+    padding: 29.5px 0;
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+}
