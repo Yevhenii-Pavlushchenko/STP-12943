@@ -1,0 +1,33 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="burger-menu" width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none">
+      <path d="M3 12H21M3 6H21M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="close" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="star-rating" viewBox="0 0 32 32">
+      <path d="M31.667 12.444h-12.096l-3.738-11.503-3.71 15.215 3.71 7.793 9.788 7.11-3.738-11.503 9.784-7.112z"></path>
+      <path d="M12.096 12.444h-12.096l9.788 7.11-3.74 11.505 9.788-7.11v-23.008l-3.74 11.503z"></path>
+    </symbol>
+    <symbol id="arrow-up" width="48" height="48" viewBox="0 0 48 48" fill="none">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333"
+        d="M24 20l-8-8-8 8"></path>
+    </symbol>
+    <symbol id="arrow-down" width="26" height="14" viewBox="0 0 26 14" fill="none">
+      <path d="M1 1L13 13L25 1" stroke="#FC0505" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+        d="M20 24l-8-8 8-8"></path>
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+        d="M12 24l8-8-8-8"></path>
+    </symbol>
+  </defs>
+</svg>
