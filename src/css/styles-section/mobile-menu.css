@@ -8,8 +8,7 @@
   height: 100%;
   min-width: 320px;
   max-width: 375px;
-  background-color: var(--black-color);
-  /* background-image: url('/img/faq/bg-faq-mob.png'); */
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,24 +44,24 @@
 
 .mm-close-btn {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
   margin-left: auto;
   outline: none;
   transition: ease-in 200ms;
 
-  /* fill: var(--white-color); */
+  stroke: var(--black-color);
 }
 
 .btn-close-icon {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .mm-close-btn:active > .btn-close-icon {
-  /* fill: var(--active-color); */
+  stroke: var(--accent-color);
 }
 
 .mm-list-navigation {
@@ -75,18 +74,17 @@
   gap: 24px;
 }
 .mm-item-nav-link {
-  font-family: 'Oswald';
   font-size: 17px;
   font-weight: 600;
   transition: color 0.3s ease-in-out;
   &:active {
-    /* color: var(--active-color); */
+    color: var(--accent-color);
   }
   &:hover {
-    /* color: var(--active-color); */
+    color: var(--accent-color);
   }
   &:focus {
-    /* color: var(--active-color); */
+    color: var(--accent-color);
   }
 }
 @media only screen and (min-width: 1440px) {
