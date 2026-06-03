@@ -9,7 +9,7 @@
   min-width: 320px;
   max-width: 375px;
   background-color: var(--black-color);
-  background-image: url('/img/faq/bg-faq-mob.png');
+  /* background-image: url('/img/faq/bg-faq-mob.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -53,7 +53,7 @@
   outline: none;
   transition: ease-in 200ms;
 
-  fill: var(--white-color);
+  /* fill: var(--white-color); */
 }
 
 .btn-close-icon {
@@ -62,7 +62,7 @@
 }
 
 .mm-close-btn:active > .btn-close-icon {
-  fill: var(--active-color);
+  /* fill: var(--active-color); */
 }
 
 .mm-list-navigation {
@@ -80,13 +80,13 @@
   font-weight: 600;
   transition: color 0.3s ease-in-out;
   &:active {
-    color: var(--active-color);
+    /* color: var(--active-color); */
   }
   &:hover {
-    color: var(--active-color);
+    /* color: var(--active-color); */
   }
   &:focus {
-    color: var(--active-color);
+    /* color: var(--active-color); */
   }
 }
 @media only screen and (min-width: 1440px) {

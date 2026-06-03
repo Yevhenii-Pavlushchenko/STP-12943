@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--black-color);
+  /* background-color: var(--black-color); */
 
   .container {
     display: flex;
@@ -21,14 +21,14 @@
   letter-spacing: 0.03em;
   padding: 15px 0;
   text-align: center;
-  color: var(--white-color);
+  /* color: var(--white-color); */
   transition: color 300ms ease-in-out;
 
   &:hover {
-    color: var(--active-color);
+    /* color: var(--active-color); */
   }
   &:active {
-    color: aqua;
+    /* color: aqua; */
   }
 }
 
