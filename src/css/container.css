@@ -2,12 +2,10 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 12px;
-}
+  padding: 70px 12px;
 
 @media only screen and (min-width: 1440px) {
-  .container {
     max-width: 1440px;
-    padding: 0 156px;
+    padding: 120px 156px;
   }
 }
