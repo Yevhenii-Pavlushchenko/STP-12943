@@ -2,11 +2,11 @@
   --font-dm-sans: 'DM Sans', sans-serif;
   --font-old-standard: 'Old Standard TT', serif;
 
-  --black-color: #3A2535;
+  --black-color: #3a2535;
   --white-color: #ffffff;
-  --background-color: #FFFBF8;
-  --accent-color: #C85C78;
-  --accent-lite-color: #F08EA8;
+  --background-color: #fffbf8;
+  --accent-color: #c85c78;
+  --accent-lite-color: #f08ea8;
   --text-color: #875267;
 
   font-synthesis: none;
@@ -36,12 +36,19 @@ body {
 
 @media only screen and (min-width: 1440px) {
   body {
-    padding-top: 90px;
+    padding-top: 114px;
   }
 }
 
 main {
   flex-grow: 1;
+}
+
+section {
+  padding: 70px 0;
+  @media only screen and (min-width: 1440px) {
+    padding: 120px 0;
+  }
 }
 
 h1,
@@ -60,4 +67,17 @@ a,
 li {
   font-family: var(--font-dm-sans);
   color: var(--text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
 }
