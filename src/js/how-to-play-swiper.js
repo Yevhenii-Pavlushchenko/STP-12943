@@ -1,79 +1,20 @@
 import Swiper from 'swiper';
 import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-
 import 'swiper/css';
-import 'swiper/css/pagination';
 
-const slidesData = [
-  {
-    title: 'Enter the Arena',
-    text: 'Start each run in a confined space filled with incoming enemies.',
-  },
-  {
-    title: 'Control Movement',
-    text: 'Dodge attacks and reposition constantly to stay alive.',
-  },
-  {
-    title: 'Attack Automatically',
-    text: 'Weapons fire continuously, allowing focus on movement and strategy.',
-  },
-  {
-    title: 'Choose Upgrades',
-    text: 'Select power-ups during the run to enhance abilities.',
-  },
-  {
-    title: 'Last Longer',
-    text: 'Survive waves to reach higher difficulty levels',
-  },
-];
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.how-to-play-slider', {
+    // Базовые настройки для мобилок
+    slidesPerView: 'auto' /* Карточки займут ровно свои 206px */,
+    centeredSlides: true /* Активная карточка будет по центру экрана */,
+    spaceBetween: 24 /* Гэп 24px между слайдами */,
+    initialSlide: 0 /* Стартуем с первой карточки */,
 
-const swiper = new Swiper('#how-to-play-swiper', {
-  modules: [Pagination, Mousewheel, Keyboard],
-
-  direction: 'vertical',
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 8,
-  loop: true,
-  grabCursor: true,
-
-  mousewheel: {
-    invert: false,
-  },
-
-  keyboard: {
-    enabled: true,
-  },
-
-  observer: true,
-  observeParents: true,
-  watchOverflow: true,
-
-  pagination: {
-    el: '[data-how-to-play-pagination]',
-    clickable: true,
-  },
-
-  on: {
-    init: function () {
-      setTimeout(() => {
-        this.update();
-      }, 200);
-
-      updateContent(this.realIndex);
+    // Отключаем Swiper на десктопе, чтобы работал чистый CSS-ряд
+    breakpoints: {
+      1440: {
+        enabled: false /* Полностью выключает логику слайдера на 1440px+ */,
+      },
     },
-    slideChange: function () {
-      updateContent(this.realIndex);
-    },
-  },
+  });
 });
-
-function updateContent(index) {
-  const titleEl = document.querySelector('[data-how-to-play-title]');
-  const textEl = document.querySelector('[data-how-to-play-text]');
-
-  if (slidesData[index] && titleEl && textEl) {
-    titleEl.textContent = slidesData[index].title;
-    textEl.textContent = slidesData[index].text;
-  }
-}
