@@ -24,6 +24,9 @@
   width: 100%;
   padding: 20px 0;
   overflow: hidden !important;
+  @media (min-width:1440px) {
+    overflow:visible !important;
+  }
 }
 
 .how-to-play-list {
@@ -63,7 +66,6 @@
       background-color: var(--accent-color) !important;
       color: #ffffff !important;
       box-shadow: 0 12px 35px rgba(185, 91, 119, 0.25);
-      cursor: pointer;
 
       .card-number {
         color: var(--accent-lite-color);
