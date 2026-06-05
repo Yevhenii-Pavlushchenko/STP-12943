@@ -48,6 +48,8 @@
   width: 125px;
   height: 154px;
   padding: 0 !important;
+  overflow: hidden;
+
 
   @media (min-width: 1440px) {
     width: 205px;
