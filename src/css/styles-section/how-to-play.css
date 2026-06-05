@@ -23,7 +23,7 @@
 .how-to-play-slider {
   width: 100%;
   padding: 20px 0;
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 .how-to-play-list {
