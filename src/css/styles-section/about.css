@@ -52,6 +52,7 @@
   padding: 0 !important;
   overflow: hidden;
 
+
   opacity: 0;
   transform: translateX(100vw);
   transition: transform 1.0s cubic-bezier(0.25, 1, 0.5, 1), opacity 1.8s ease;
