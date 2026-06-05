@@ -67,7 +67,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* flex-grow: 0; */
 }
 .feature-icon {
   width: 24px;
@@ -94,67 +93,87 @@
   line-height: 1.5;
   color: var(--text-color);
 }
-
 /***********************/
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+.box-for-sticks {
+  display: flex;
+  flex-direction: row;
   gap: 15px;
-  /* max-width: 335px; */
-  /* margin: 0 auto; */
-  /* padding: 20px; */
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
-
-.card {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
+.box-sticks-left {
+  display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 15px;
 
-  border-radius: 15px; */
-
-  padding: 15px 50px 34px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.box-img {
+  border-radius: 15px;
+  align-self: center;
+  padding: 15px 50px;
 }
 .card-lipstick {
-  grid-column: 1;
-  grid-row: 1;
   background: linear-gradient(135deg, #d4f5e8 0%, #dbcfff 100%);
 }
-.box-for-icon {
+.box-for-img {
 }
 .feature-img {
   width: 62px;
   height: 62px;
-  margin-bottom: 6.5px;
+  margin-bottom: 7px;
 }
 .feature-icon-title {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
-  color: var(--text-color);
   text-align: center;
+  color: var(--text-color);
 }
 .card-skincare {
-  grid-column: 1;
-  grid-row: 2;
   background: linear-gradient(135deg, #fff5d2 0%, #f8d4e0 100%);
 }
 .card-asmr {
-  grid-column: 1;
-  grid-row: 3;
   background: linear-gradient(135deg, #d4f5e8 0%, #dbcfff 100%);
 }
+.box-sticks-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px 21px 20px;
+
+  /* gap: 15px; */
+
+  /* flex-shrink: 0; */
+  /* flex-grow: 1; */
+}
 .card-studio {
-  grid-column: 2;
-  grid-row: 1 / span 3;
-  padding: 20px 21px;
+  border-radius: 15px;
   background: linear-gradient(135deg, #fff5d2 0%, #f8d4e0 100%);
 }
+.box-img-top-right {
+  /* padding: 15px 39px 0; */
+}
+.box-for-img-right {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+  .feature-img {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+}
+.box-game-preview {
+  display: flex;
+  justify-content: center;
+}
+.box-for-screen {
+}
 .game-preview {
-  width: 118px;
-  height: 231px;
+  border-radius: 15px;
+  box-shadow: 0px 3.08px 18.46px 0px #a2627340;
 }
