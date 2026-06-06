@@ -1,23 +1,20 @@
 .footer {
-  width: 100%;
+  /* width: 100%;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto; */
   background-color: var(--black-color);
-  padding: 44px 22px;
+  padding: 32px 0;
   @media screen and (min-width: 1440px) {
     max-width: 100%;
-    padding: 44px 0;
+    padding: 43px 0;
   }
 }
 .footer .container {
-  padding-top: 0;
-    padding-bottom: 0;
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
   }
 }
 
@@ -67,5 +64,7 @@
   @media screen and (min-width: 1440px) {
     margin: 0;
     text-align: right;
+    height: 28px;
+    line-height: 28px;
   }
 }

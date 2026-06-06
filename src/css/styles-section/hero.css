@@ -188,6 +188,10 @@
   margin: 0 auto;
 
   background-image: url('/img/hero/background-hero-phone-mobile.png');
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+    background-image: url('/img/hero/background-hero-phone-mobile@2x.png');
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -196,6 +200,11 @@
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
 
   @media only screen and (min-width: 1440px) {
+    background-image: url('/img/hero/background-hero-phone-desktop.png');
+    @media only screen and (-webkit-min-device-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+      background-image: url('/img/hero/background-hero-phone-desktop@2x.png');
+    }
     margin: 0;
     flex-shrink: 0;
   }

@@ -1,41 +1,34 @@
-.main-section {
-  max-width: 350px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-  padding-top: 120px;
+.main {
+  /* max-width: 350px; */
+  margin: 0 auto 30px;
+  padding-top: 50px;
 
   @media only screen and (min-width: 1440px) {
-    max-width: 1296px;
-    margin-bottom: 50px;
-    padding-top: 187px;
+    margin-bottom: 100px;
+    padding-top: 100px;
   }
 }
-
 .main-title-secondary-pages {
   font-weight: 400;
-    font-size: 48px;
-    line-height: 1.0625;
-    letter-spacing: -0.03em;
-    color: var(--black-color);
-    margin-bottom: 32px;
+  font-size: 48px;
+  line-height: 1.0625;
+  letter-spacing: -0.03em;
+  color: var(--black-color);
+  margin-bottom: 32px;
 }
-
 .date-text {
   display: block;
   font-weight: 600;
-    font-size: 20px;
-    line-height: 1.45;
-    color: var(--black-color);
-    margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--black-color);
+  margin-bottom: 16px;
 }
-
 .date {
   color: var(--black-color);
 }
-
 .paragraph-secondary-pages {
-display: flex;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
@@ -44,21 +37,20 @@ display: flex;
   margin-bottom: 32px;
   color: var(--black-color);
 }
-
-.name {font-weight: 700;}
-
+.name {
+  font-weight: 700;
+}
 .subtitle-secondary-pages {
   font-family: var(--font-dm-sans);
   font-weight: 600;
-    font-size: 20px;
-    line-height: 1.45;
-    color: var(--black-color);
-    margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--black-color);
+  margin-bottom: 16px;
 }
-.list-secondary-pages{
+.list-secondary-pages {
   list-style-type: square;
 }
-
 .list-secondary-pages {
   list-style-type: decimal !important;
   display: block !important;
@@ -69,7 +61,6 @@ display: flex;
   line-height: 1.75;
   color: var(--black-color);
 }
-
 .list-secondary-pages li {
   display: list-item !important;
   list-style-type: decimal !important;
@@ -79,7 +70,6 @@ display: flex;
   font-weight: 700;
   color: var(--black-color);
 }
-
 .list-secondary-pages li:last-child {
   margin-bottom: 0;
 }
