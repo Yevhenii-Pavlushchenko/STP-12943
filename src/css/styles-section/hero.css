@@ -192,6 +192,9 @@
   background-size: cover;
   background-position: center;
 
+  border-radius: 43px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+
   @media only screen and (min-width: 1440px) {
     margin: 0;
     flex-shrink: 0;
@@ -202,29 +205,38 @@
   z-index: 10;
   transition: all 0.3s ease;
 
-  border-radius: 20px;
-  /* fill: rgba(255, 255, 255, 0.55); */
-  /* border: 0.97px solid rgba(255, 255, 255, 0.8); */
-  /* backdrop-filter: blur(10.16436767578125px); */
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  width: 67px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .icon-left {
-  left: -56px; /* Сдвигаем влево, чтобы заходила на рамку */
+  left: -31px;
   top: 55%;
   animation: floatVertical 1.6s ease-in-out infinite alternate;
 }
 .icon-right-top {
-  right: -54px;
+  right: -32px;
   top: 20%;
   animation: floatVertical 1.15s ease-in-out infinite alternate;
 }
 .icon-right-bottom {
-  right: -51px;
+  right: -31px;
   top: 65%;
   animation: floatVertical 2.1s ease-in-out infinite alternate;
 }
 .item-img {
+  /* width: 30px; */
+  height: 38px;
 }
+
 @keyframes floatVertical {
   0% {
     transform: translateY(-10px);
