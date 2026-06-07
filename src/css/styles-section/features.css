@@ -20,7 +20,6 @@
   line-height: 2;
   text-transform: uppercase;
   color: var(--accent-color);
-  /* text-align: center; */
   width: 74px;
   margin: 0 auto 14px;
   border-bottom: 1px solid var(--accent-color);
@@ -225,9 +224,7 @@
     border-radius: 24px;
   }
 }
-.box-img-top-right {
-  /* padding: 15px 39px 0; */
-}
+
 .box-for-img-right {
   display: flex;
   justify-content: center;
@@ -240,8 +237,6 @@
 .box-game-preview {
   display: flex;
   justify-content: center;
-}
-.box-for-screen {
 }
 .game-preview {
   border-radius: 15px;
