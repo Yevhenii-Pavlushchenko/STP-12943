@@ -229,7 +229,7 @@
   padding: 15px 21px 20px;
 
   @media only screen and (min-width: 1440px) {
-    padding: 34px 31px 19px;
+    padding: 34px 19px 31px;
     flex-basis: calc((100% - 15px) / 2);
     flex-grow: 0;
   }
@@ -256,10 +256,16 @@
 .box-game-preview {
   display: flex;
   justify-content: center;
-  border-radius: 0px;
-  overflow: hidden;
+  /* border-radius: 5px; */
+  /* overflow: hidden; */
 }
 .box-for-screen {
+  width: 118px;
+  height: 231px;
+
+  border-radius: 5px;
+  overflow: hidden;
+
   @media only screen and (min-width: 1440px) {
     width: 227px;
     height: 438px;

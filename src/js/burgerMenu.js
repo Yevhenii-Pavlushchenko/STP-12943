@@ -7,12 +7,12 @@ openBtnEl.addEventListener('click', () => {
   modalViewEl.dataset.visible = 'open';
   closeBtnEl.addEventListener('click', handleClose);
   document.addEventListener('keydown', handleEscClose);
-  document.body.classList.add('no-scroll');
+  document.body.dataset.scroll = 'false';
 });
 
 const handleClose = () => {
   modalViewEl.dataset.visible = 'close';
-  document.body.classList.remove('no-scroll');
+  document.body.dataset.scroll = 'true';
   closeBtnEl.removeEventListener('click', handleClose);
   document.removeEventListener('keydown', handleEscClose);
 };
