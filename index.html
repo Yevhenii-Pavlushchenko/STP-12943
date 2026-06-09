@@ -16,31 +16,12 @@
     <script type="module" crossorigin src="/STP-12943/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12943/assets/vendor-fD3U4rjd.js">
     <link rel="stylesheet" crossorigin href="/STP-12943/assets/vendor-CtIR5pHR.css">
-    <link rel="stylesheet" crossorigin href="/STP-12943/assets/styles-BBV_Y_tn.css">
+    <link rel="stylesheet" crossorigin href="/STP-12943/assets/styles-KrZBVsqP.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <a href="./" class="logo-link">
-      <!-- <picture>
-        <source
-          media="(max-width: 1439.98px)"
-          type="image/png"
-          srcset="/img/logo-mobile.png 1x, /img/logo-mobile@2x.png 2x"
-        />
-        <source
-          media="(min-width: 1440px)"
-          type="image/png"
-          srcset="/img/logo-desktop.png 1x, /img/logo-desktop@2x.png 2x"
-        />
-        <img
-          class="logo-img"
-          src="/img/logo-mobile.png"
-          alt="Relaxing Skin ASMR Makeover Logo"
-          width="70"
-          height="70"
-        />
-      </picture> -->
       <img
         class="logo-img"
         src="/STP-12943/img/logo.png"
@@ -200,9 +181,8 @@
         animations and a clean interface that doesn't stress you out.
       </p>
     </div>
-
-    <div class="picture-wrapper">
-      <div class="picture-wrapper-item">
+    <ul class="picture-wrapper" data-observer="false">
+      <li class="picture-wrapper-item">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -210,19 +190,19 @@
             type="image/png"
           />
           <source
+            media="(max-width: 1439.98px)"
             srcset="img/about/card-1-mobile.png 1x, img/about/card-1-mobile@2x.png 2x"
             type="image/png"
           />
           <img
-            src="img/about/card-1-desktop.png"
+            src="img/about/card-1-mobile.png"
+            srcset="img/about/card-1-mobile@2x.png"
             alt="photo character 1"
             loading="lazy"
           />
         </picture>
-
-        />
-      </div>
-      <div class="picture-wrapper-item">
+      </li>
+      <li class="picture-wrapper-item">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -230,17 +210,19 @@
             type="image/png"
           />
           <source
+            media="(max-width: 1439.98px)"
             srcset="img/about/card-2-mobile.png 1x, img/about/card-2-mobile@2x.png 2x"
             type="image/png"
           />
           <img
-            src="img/about/card-2-desktop.png"
+            src="img/about/card-2-mobile.png"
+            srcset="img/about/card-2-mobile@2x.png"
             alt="photo character 2"
             loading="lazy"
           />
         </picture>
-      </div>
-      <div class="picture-wrapper-item">
+      </li>
+      <li class="picture-wrapper-item">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -248,17 +230,19 @@
             type="image/png"
           />
           <source
+            media="(max-width: 1439.98px)"
             srcset="img/about/card-3-mobile.png 1x, img/about/card-3-mobile@2x.png 2x"
             type="image/png"
           />
           <img
-            src="img/about/card-3-desktop.png"
+            src="img/about/card-3-mobile.png"
+            srcset="img/about/card-3-mobile@2x.png"
             alt="photo character 3"
             loading="lazy"
           />
         </picture>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -269,7 +253,7 @@
       Complete relaxing beauty routines
       <span class="section-subtitle-span">step by step</span>
     </h3>
-    <div class="swiper how-to-play-slider">
+    <div class="swiper how-to-play-slider" data-slider>
       <ul class="swiper-wrapper how-to-play-list">
         <li class="swiper-slide how-to-play-item">
           <span class="card-number">01</span>
@@ -544,7 +528,7 @@
     </h3>
   </div>
   <div class="faq-accordion">
-      <details class="faq-item">
+      <details class="faq-item" open>
         <summary class="faq-question">
           <span>Is Relaxing Skin ASMR Makeover beginner-friendly?</span>
           <svg class="faq-arrow faq-arrow-down"><use href="./sprite.svg#arrow-down"></use></svg>
