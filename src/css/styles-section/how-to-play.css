@@ -1,5 +1,9 @@
 .how-to-play {
   background: linear-gradient(135deg, #ffcad8 0%, #fff3ea 48.08%, #fbe9ff 100%);
+  scroll-margin-top: 94px;
+  @media only screen and (min-width: 1440px) {
+    scroll-margin-top: 114px;
+  }
 }
 
 .how-to-play-container {
@@ -14,7 +18,7 @@
     max-width: 493px;
     margin-bottom: 32px;
 
-    @media (min-width:1440px) {
+    @media (min-width: 1440px) {
       margin-bottom: 40px;
     }
   }
@@ -25,7 +29,7 @@
   padding: 20px 0;
   overflow: hidden !important;
 
-  @media (min-width:1440px) {
+  @media (min-width: 1440px) {
     overflow: visible !important;
   }
 }
@@ -60,7 +64,10 @@
   align-items: center !important;
   text-align: center;
   color: var(--black-color);
-  transition: background-color 400ms ease, color 400ms ease, box-shadow 400ms ease;
+  transition:
+    background-color 400ms ease,
+    color 400ms ease,
+    box-shadow 400ms ease;
 
   @media (min-width: 1440px) {
     margin: 0 !important;
@@ -94,7 +101,7 @@
 }
 
 .how-to-play-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -136,7 +143,6 @@
 }
 
 @media (max-width: 1439px) {
-
   .how-to-play-item.active-card,
   .how-to-play-item.swiper-slide-active {
     background-color: var(--accent-color) !important;
