@@ -260,8 +260,10 @@
   overflow: hidden;
 }
 .box-for-screen {
-  width: 227px;
-  height: 438px;
+  @media only screen and (min-width: 1440px) {
+    width: 227px;
+    height: 438px;
+  }
 }
 .game-preview {
   box-shadow: 0px 3.08px 18.46px 0px #a2627340;
